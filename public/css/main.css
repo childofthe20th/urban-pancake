@@ -41,6 +41,8 @@ body {
 @media screen and (max-width:600px) {
   body {
     width:100%;
+    background: white;
+    box-shadow: none;
   }
   h3 {
     padding-left: 22px;
