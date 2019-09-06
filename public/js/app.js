@@ -28,138 +28,35 @@ const displayDate = () => {
 
 const addDay = () => {
   currentDate.setDate(currentDate.getDate() + 1);
-  let date = currentDate.getDate();
-  let month = currentDate.getMonth();
-  let year = currentDate.getFullYear();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let dateWithFullMonthName = monthNames[month] + " " + pad(date) + ", " + year;
-  document.getElementById("date").innerHTML = dateWithFullMonthName;
+  displayDate();
 };
 
 const subtractDay = () => {
   currentDate.setDate(currentDate.getDate() - 1);
-  let date = currentDate.getDate();
-  let month = currentDate.getMonth();
-  let year = currentDate.getFullYear();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let dateWithFullMonthName = monthNames[month] + " " + pad(date) + ", " + year;
-  document.getElementById("date").innerHTML = dateWithFullMonthName;
+  displayDate();
 };
 
 const addWeek = () => {
   currentDate.setDate(currentDate.getDate() + 7);
-  let date = currentDate.getDate();
-  let month = currentDate.getMonth();
-  let year = currentDate.getFullYear();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let dateWithFullMonthName = monthNames[month] + " " + pad(date) + ", " + year;
-  document.getElementById("date").innerHTML = dateWithFullMonthName;
+  displayDate();
 };
 
 const subtractWeek = () => {
   currentDate.setDate(currentDate.getDate() - 7);
-  let date = currentDate.getDate();
-  let month = currentDate.getMonth();
-  let year = currentDate.getFullYear();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let dateWithFullMonthName = monthNames[month] + " " + pad(date) + ", " + year;
-  document.getElementById("date").innerHTML = dateWithFullMonthName;
+  displayDate();
 };
 
 const addMonth = () => {
   currentDate.setDate(currentDate.getDate() + 30);
-  let date = currentDate.getDate();
-  let month = currentDate.getMonth();
-  let year = currentDate.getFullYear();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let dateWithFullMonthName = monthNames[month] + " " + pad(date) + ", " + year;
-  document.getElementById("date").innerHTML = dateWithFullMonthName;
+  displayDate();
 };
 
 const subtractMonth = () => {
   currentDate.setDate(currentDate.getDate() - 30);
-  let date = currentDate.getDate();
-  let month = currentDate.getMonth();
-  let year = currentDate.getFullYear();
-  let monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let dateWithFullMonthName = monthNames[month] + " " + pad(date) + ", " + year;
-  document.getElementById("date").innerHTML = dateWithFullMonthName;
+  displayDate();
 };
+
+const resetDate = () => {
+  currentDate = new Date();
+  displayDate();
+}

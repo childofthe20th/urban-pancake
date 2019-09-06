@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="content" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="public/js/app.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="public/css/main.css">
-  <title>Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Day Counter</title>
 </head>
 
 <body onload="displayDate()">
-  <h1 id="date"></h1>
   <div>
-    <button onclick="addDay()">Add Day</button>
-    <button onclick="subtractDay()">Subtract Day</button>
+    <div>
+      <h1 id="date"></h1>
+      <div class="flex-container">
+        <div class="title-container">
+          <h3 class="titles">Day</h3>
+        </div>
+        <div class="btn-container">
+          <a class="waves-effect waves-light btn" onclick="addDay()"><i class="material-icons">add</i></a>
+          <a class="waves-effect waves-light btn" onclick="subtractDay()"><i class="material-icons">remove</i></a>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="title-container">
+          <h3 class="titles">Week</h3>
+        </div>
+        <div class="btn-container">
+          <a class="waves-effect waves-light btn" onclick="addWeek()"><i class="material-icons">add</i></a>
+          <a class="waves-effect waves-light btn" onclick="subtractWeek()"><i class="material-icons">remove</i></a>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="title-container">
+          <h3 class="titles">Month</h3>
+        </div>
+        <div class="btn-container">
+          <a class="waves-effect waves-light btn" onclick="addMonth()"><i class="material-icons">add</i></a>
+          <a class="waves-effect waves-light btn" onclick="subtractMonth()"><i class="material-icons">remove</i></a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a class="btn-floating waves-effect waves-light btn-large red" onclick="resetDate()"><i class="material-icons">autorenew</i></a>
+    </div>
   </div>
-  <div>
-    <button onclick="addWeek()">Add Week</button>
-    <button onclick="subtractWeek()">Subtract Week</button>
-  </div>
-  <div>
-    <button onclick="addMonth()">Add Month</button>
-    <button onclick="subtractMonth()">Subract Month</button>
-  </div>
+
 
 </body>
 </html>
