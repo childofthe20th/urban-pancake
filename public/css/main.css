@@ -59,6 +59,7 @@ body {
     margin: 0 10px;
   }
   #date {
+    margin-top: 100px;
     padding-bottom: 50px;
     font-size: 8vw;
   }
